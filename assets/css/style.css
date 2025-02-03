@@ -234,7 +234,7 @@ body {
 /* Mise en surbrillance temporaire après le scroll */
 .highlight {
   background-color: rgba(255, 215, 0, 0.3); /* Jaune doré transparent */
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
 }
 
 
