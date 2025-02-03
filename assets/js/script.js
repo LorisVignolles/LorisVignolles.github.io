@@ -36,3 +36,42 @@ document.addEventListener('scroll', function() {
     });
   });
     
+  function scrollToElement(elementId, highlightIds = []) {
+    const element = document.getElementById(elementId);
+    if (element) {
+        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+        const offset = 20; 
+
+        // Défilement fluide
+        window.scrollTo({
+            top: element.offsetTop - navbarHeight - offset,
+            behavior: "smooth"
+        });
+
+        // Supprime les précédents effets de surbrillance
+        document.querySelectorAll('.highlight').forEach(el => {
+            el.classList.remove('highlight');
+        });
+
+        // Ajoute la classe highlight aux éléments liés
+        highlightIds.forEach(id => {
+            const highlightElement = document.getElementById(id);
+            if (highlightElement) {
+                highlightElement.classList.add("highlight");
+            }
+        });
+
+        // Supprime l'effet après 0.5s
+        setTimeout(() => {
+            highlightIds.forEach(id => {
+                const highlightElement = document.getElementById(id);
+                if (highlightElement) {
+                    highlightElement.classList.remove("highlight");
+                }
+            });
+        }, 500);
+    }
+}
+
+
+  

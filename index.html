@@ -17,107 +17,108 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Loris Vignolles</a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto d-flex align-items-center">
           <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">Expérience</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Section À propos -->
-  <section id="about" class="section bg-dark text-light">
-    <div class="container text-center">
-      <h2>À propos de moi</h2>
-      <p>Étudiant en Master Informatique, je suis passionné par le développement web, l’embarqué et l’administration système. 
-        Rigoureux et pragmatique, j’aime le travail en équipe et les défis techniques.</p>
-      <img src="images/photo_loris.jpg" alt="Loris Vignolles" class="profile-pic">
-    </div>
-  </section>
+<!-- Section À propos -->
+<section id="about" class="section bg-dark text-light pt-5">
+  <div class="container text-center">
+    <h2 class="mb-4">À propos de moi</h2>
+    <p class="mb-4">Etudiant en BUT Informatique à l'IUT de Blagnac et en alternance chez OpenIndus, je souhaite poursuivre mes
+      études afin d’acquérir de nouvelles compétences et approfondir mon
+      apprentissage. De nature rigoureuse, pragmatique et bienveillante, j’aime
+      particulièrement le contact humain et le travail d’équipe</p>
+    <img src="images/photo_loris.jpg" alt="Loris Vignolles" class="profile-pic rounded-circle mb-3">
+    <p class="name">Loris Vignolles</p> <!-- Nom ajouté sous la photo -->
+  </div>
+</section>
 
-  <!-- Section Expérience -->
-  <section id="experience" class="section">
-    <div class="container">
-      <h2 class="text-center">Expérience professionnelle</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Assistant développement outils logiciels</h5>
-              <p class="card-text"><strong>OpenIndus</strong> - Alternance (2024 - en cours)</p>
-              <ul>
-                <li>Développement d’un outil de chiffrage interne communicant avec des API externes (Python).</li>
-                <li>Intégration d’un module Wordpress pour le frontend (JS, PHP, HTML, CSS).</li>
-                <li>Déploiement et tests de l’outil.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Assistant Ingénieur</h5>
-              <p class="card-text"><strong>OpenIndus</strong> - Stage (3 mois)</p>
-              <ul>
-                <li>Développement d’une plateforme de supervision web avec gestion des abonnements (Python/Django).</li>
-                <li>Développement embarqué sur un automate industriel (C++/ESP-IDF).</li>
-              </ul>
-            </div>
-          </div>
+
+<!-- Section Expériences Professionnelles -->
+<section id="experience" class="section bg-dark text-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Expériences Professionnelles</h2>
+    <div class="row">
+
+      <!-- Expérience OpenIndus -->
+      <div class="col-md-6 mb-4">
+        <div class="experience-card p-4 bg-secondary rounded">
+          <img src="images/openindus.png" alt="OpenIndus Logo" class="experience-logo mb-3">
+          <h3 class="text-light">Assistant développement outils logiciels (Alternance)</h3>
+          <p><strong>OpenIndus - Toulouse</strong></p>
+          <p>Développement d’un outil de chiffrage interne communicant avec des API externes [Python]</p>
+          <p>Intégration d’un module intégré à Wordpress pour faire le frontend [JS, PHP, HTML, CSS]</p>
+          <p>Déploiement et test de l’outil</p>
+          <p class="date text-muted">Juillet 2024 - Présent</p>
         </div>
       </div>
-    </div>
-  </section>
 
- <!-- Section Compétences -->
+      <!-- Autre Expérience -->
+      <div class="col-md-6 mb-4">
+        <div class="experience-card p-4 bg-secondary rounded">
+          <img src="images/openindus.png" alt="Entreprise Logo" class="experience-logo mb-3">
+          <h3 class="text-light">Assistant Ingénieur (Stage)</h3>
+          <p><strong>OpenIndus - Toulouse</strong></p>
+          <p>Développement d’une plateforme de supervision web, intégration du paiement et du système de gestion des abonnements [Python/Django]</p>
+          <p>Développement embarqué sur l’automate industriel programmable produit par l’entreprise [C++/ESP-IDF]</p>
+          <p class="date text-muted">Février - Avril 2024</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Section Compétences -->
 <section id="skills" class="section bg-dark text-light">
   <div class="container">
     <h2 class="text-center">Compétences</h2>
     <div class="skills-container">
       
-      <!-- Développement Web -->
-      <div class="skill-card">
+      <div class="skill-card" id="skill-web" onclick="scrollToElement('projects', ['project-chiffrage', 'project-supervision', 'project-colis', 'project-emploi', 'project-ecommerce'])">
         <i class="fas fa-code"></i>
         <h5>Développement Web</h5>
         <p>Frontend & Backend (HTML, CSS, JavaScript, PHP, Node.js).</p>
       </div>
 
-      <!-- Oracle SQL / GraphQL -->
-      <div class="skill-card">
+      <div class="skill-card" id="skill-db" onclick="scrollToElement('projects', ['project-supervision', 'project-colis', 'project-emploi', 'project-ecommerce'])">
         <i class="fas fa-database"></i>
         <h5>Base de Données</h5>
         <p>Oracle SQL, MySQL, PostgreSQL, GraphQL.</p>
       </div>
 
-      <!-- Développement Embarqué -->
-      <div class="skill-card">
+      <div class="skill-card" id="skill-embedded" onclick="scrollToElement('projects', ['project-esp32'])">
         <i class="fas fa-microchip"></i>
         <h5>Développement Embarqué</h5>
         <p>ESP-IDF, C++, programmation bas niveau.</p>
       </div>
 
-      <!-- Administration Systèmes & Réseaux -->
-      <div class="skill-card">
+      <div class="skill-card" id="skill-sysadmin" onclick="scrollToElement('projects', ['project-supervision'])">
         <i class="fas fa-network-wired"></i>
         <h5>Administration Systèmes</h5>
         <p>Linux, réseaux, sécurité informatique.</p>
       </div>
 
-      <!-- Virtualisation & DevOps -->
-      <div class="skill-card">
+      <div class="skill-card" id="skill-devops" onclick="scrollToElement('projects', ['project-emploi'])">
         <i class="fas fa-cloud"></i>
         <h5>Virtualisation & DevOps</h5>
         <p>Docker, Kubernetes, CI/CD, Ansible.</p>
       </div>
 
-      <!-- Conception & Modélisation -->
-      <div class="skill-card">
+      <div class="skill-card" id="skill-gestion" onclick="scrollToElement('projects', ['project-chiffrage', 'project-colis', 'project-supervision', 'project-ecommerce', 'project-emploi' ])">
         <i class="fas fa-project-diagram"></i>
-        <h5>Conception & Modélisation</h5>
+        <h5>Gestion de Projet</h5>
         <p>Méthodes UML, Agile, gestion de projet.</p>
       </div>
 
@@ -126,17 +127,90 @@
 </section>
 
 
-  <!-- Section Contact -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2 class="text-center">Contact</h2>
-      <div class="text-center">
-        <p><strong>Téléphone :</strong> 06 75 12 49 37</p>
-        <p><strong>Email :</strong> <a href="mailto:lorisvignolles.pro@gmail.com">lorisvignolles.pro@gmail.com</a></p>
-        <p><strong>Localisation :</strong> Blagnac (31700), France</p>
+
+<!-- Section Projets -->
+<section id="projects" class="section bg-dark text-light">
+  <div class="container">
+    <h2 class="text-center">Projets</h2>
+    <div class="projects-container">
+      
+      <div class="project-card" id="project-chiffrage" onclick="scrollToElement('skills', ['skill-web', 'skill-gestion'])">
+        <i class="fas fa-code"></i>
+        <h5>Outil de Chiffrage</h5>
+        <p>Développement web avec JS, PHP, HTML & CSS, intégration API.</p>
+      </div>
+
+      <div class="project-card" id="project-supervision" onclick="scrollToElement('skills', ['skill-web', 'skill-db', 'skill-sysadmin','skill-gestion'])">
+        <i class="fas fa-database"></i>
+        <h5>Plateforme de Supervision Web</h5>
+        <p>Gestion d’abonnements avec Django, PostgreSQL, GraphQL.</p>
+      </div>
+
+      <div class="project-card" id="project-esp32" onclick="scrollToElement('skills', ['skill-embedded'])">
+        <i class="fas fa-microchip"></i>
+        <h5>Développement Embarqué ESP-32</h5>
+        <p>Programmation d’un automate industriel avec ESP-IDF et C++.</p>
+      </div>
+
+      <div class="project-card" id="project-colis" onclick="scrollToElement('skills', ['skill-web', 'skill-db', 'skill-gestion'])">
+        <i class="fas fa-box"></i>
+        <h5>Application de Livraison de Colis</h5>
+        <p>Backend en PHP Laravel, Frontend en Angular.</p>
+      </div>
+
+      <div class="project-card" id="project-emploi" onclick="scrollToElement('skills', ['skill-web', 'skill-devops','skill-gestion'])">
+        <i class="fas fa-calendar-alt"></i>
+        <h5>Gestion des Emplois du Temps</h5>
+        <p>Développement Vue.js/Django, déployé avec Docker.</p>
+      </div>
+
+      <div class="project-card" id="project-ecommerce" onclick="scrollToElement('skills', ['skill-web', 'skill-db', 'skill-gestion'])">
+        <i class="fas fa-shopping-cart"></i>
+        <h5>Développement d'un Site E-commerce</h5>
+        <p>PHP, JavaScript, HTML/CSS, MySQL.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- Section Contact -->
+<section id="contact" class="section bg-dark text-light">
+  <div class="container">
+    <div class="contact-container">
+      <h2>Contact</h2>
+
+      <!-- Informations de contact -->
+      <p><strong>Téléphone :</strong> 06 75 12 49 37</p>
+      <p><strong>Email :</strong> <a href="mailto:lorisvignolles.pro@gmail.com">lorisvignolles.pro@gmail.com</a></p>
+      <p><strong>Localisation :</strong> Blagnac (31700), France</p>
+
+      <!-- Formulaire de contact -->
+      <form class="contact-form" action="mailto:lorisvignolles.pro@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <textarea name="message" rows="4" placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <!-- Liens vers GitHub et CV -->
+      <div class="contact-links">
+        <a href="https://github.com/lorisvignolles" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://drive.google.com/file/d/1trsi0nd3Orl9P-RtLli9xNS8UfsNlPt7/view?usp=sharing" target="_blank">
+          <i class="fas fa-file-pdf"></i> Mon CV
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer class="bg-dark text-light text-center py-4">
