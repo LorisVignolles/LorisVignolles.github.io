@@ -1,1 +1,150 @@
-Hello World
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>Loris Vignolles - Master Informatique</title>
+  
+  <!-- Lien vers le fichier CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Loris Vignolles</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto d-flex align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Expérience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section À propos -->
+  <section id="about" class="section bg-dark text-light">
+    <div class="container text-center">
+      <h2>À propos de moi</h2>
+      <p>Étudiant en Master Informatique, je suis passionné par le développement web, l’embarqué et l’administration système. 
+        Rigoureux et pragmatique, j’aime le travail en équipe et les défis techniques.</p>
+      <img src="images/photo_loris.jpg" alt="Loris Vignolles" class="profile-pic">
+    </div>
+  </section>
+
+  <!-- Section Expérience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="text-center">Expérience professionnelle</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Assistant développement outils logiciels</h5>
+              <p class="card-text"><strong>OpenIndus</strong> - Alternance (2024 - en cours)</p>
+              <ul>
+                <li>Développement d’un outil de chiffrage interne communicant avec des API externes (Python).</li>
+                <li>Intégration d’un module Wordpress pour le frontend (JS, PHP, HTML, CSS).</li>
+                <li>Déploiement et tests de l’outil.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Assistant Ingénieur</h5>
+              <p class="card-text"><strong>OpenIndus</strong> - Stage (3 mois)</p>
+              <ul>
+                <li>Développement d’une plateforme de supervision web avec gestion des abonnements (Python/Django).</li>
+                <li>Développement embarqué sur un automate industriel (C++/ESP-IDF).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Section Compétences -->
+<section id="skills" class="section bg-dark text-light">
+  <div class="container">
+    <h2 class="text-center">Compétences</h2>
+    <div class="skills-container">
+      
+      <!-- Développement Web -->
+      <div class="skill-card">
+        <i class="fas fa-code"></i>
+        <h5>Développement Web</h5>
+        <p>Frontend & Backend (HTML, CSS, JavaScript, PHP, Node.js).</p>
+      </div>
+
+      <!-- Oracle SQL / GraphQL -->
+      <div class="skill-card">
+        <i class="fas fa-database"></i>
+        <h5>Base de Données</h5>
+        <p>Oracle SQL, MySQL, PostgreSQL, GraphQL.</p>
+      </div>
+
+      <!-- Développement Embarqué -->
+      <div class="skill-card">
+        <i class="fas fa-microchip"></i>
+        <h5>Développement Embarqué</h5>
+        <p>ESP-IDF, C++, programmation bas niveau.</p>
+      </div>
+
+      <!-- Administration Systèmes & Réseaux -->
+      <div class="skill-card">
+        <i class="fas fa-network-wired"></i>
+        <h5>Administration Systèmes</h5>
+        <p>Linux, réseaux, sécurité informatique.</p>
+      </div>
+
+      <!-- Virtualisation & DevOps -->
+      <div class="skill-card">
+        <i class="fas fa-cloud"></i>
+        <h5>Virtualisation & DevOps</h5>
+        <p>Docker, Kubernetes, CI/CD, Ansible.</p>
+      </div>
+
+      <!-- Conception & Modélisation -->
+      <div class="skill-card">
+        <i class="fas fa-project-diagram"></i>
+        <h5>Conception & Modélisation</h5>
+        <p>Méthodes UML, Agile, gestion de projet.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Section Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="text-center">Contact</h2>
+      <div class="text-center">
+        <p><strong>Téléphone :</strong> 06 75 12 49 37</p>
+        <p><strong>Email :</strong> <a href="mailto:lorisvignolles.pro@gmail.com">lorisvignolles.pro@gmail.com</a></p>
+        <p><strong>Localisation :</strong> Blagnac (31700), France</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-4">
+    <p>&copy; 2025 Loris Vignolles | Tous droits réservés</p>
+  </footer>
+
+  <!-- Lien vers le fichier JavaScript -->
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
