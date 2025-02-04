@@ -42,6 +42,63 @@ body {
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
   }
 
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Espace entre la photo et le texte */
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; /* Décale la photo vers la gauche */
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.name-card {
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.name {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: justify;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .photo-container {
+        margin-right: 0; /* Supprime le décalage gauche sur mobile */
+    }
+}
+
+
   .experience-container {
     display: flex;
     flex-wrap: wrap;

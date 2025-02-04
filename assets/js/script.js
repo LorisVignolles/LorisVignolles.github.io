@@ -69,7 +69,7 @@ document.addEventListener('scroll', function() {
                     highlightElement.classList.remove("highlight");
                 }
             });
-        }, 500);
+        }, 1000);
     }
 }
 

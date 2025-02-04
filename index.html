@@ -31,16 +31,31 @@
 
 <!-- Section À propos -->
 <section id="about" class="section bg-dark text-light pt-5">
-  <div class="container text-center">
+  <div class="container text-center d-flex flex-column align-items-center">
     <h2 class="mb-4">À propos de moi</h2>
-    <p class="mb-4">Étudiant en BUT Informatique à l'IUT de Blagnac et en alternance chez OpenIndus, je souhaite poursuivre mes
-      études afin d’acquérir de nouvelles compétences et approfondir mon
-      apprentissage. De nature rigoureuse, pragmatique et bienveillante, j’aime
-      particulièrement le contact humain et le travail d’équipe.</p>
-    <img src="images/photo_loris.jpg" alt="Loris Vignolles" class="profile-pic rounded-circle mb-3">
-    <p class="name">Loris Vignolles</p> <!-- Nom ajouté sous la photo -->
+    
+    <div class="about-content d-flex align-items-center">
+      <!-- Photo et Nom -->
+      <div class="photo-container">
+        <a href="https://www.linkedin.com/in/lorisvignolles/" target="_blank">
+          <img src="images/photo_loris.jpg" alt="Loris Vignolles" class="profile-pic">
+      </a>
+        <div>
+          <p class="name">Loris Vignolles</p>
+        </div>
+      </div>
+
+      <!-- Texte -->
+      <p class="mb-4 about-text">
+        Étudiant en BUT Informatique à l'IUT de Blagnac et en alternance chez OpenIndus, 
+        je souhaite poursuivre mes études afin d’acquérir de nouvelles compétences et 
+        approfondir mon apprentissage. De nature rigoureuse, pragmatique et bienveillante, 
+        j’aime particulièrement le contact humain et le travail d’équipe.
+      </p>
+    </div>
   </div>
 </section>
+
 
 
 <!-- Section Expériences Professionnelles -->
@@ -191,12 +206,13 @@
       <p><strong>Localisation :</strong> Blagnac (31700), France</p>
 
       <!-- Formulaire de contact -->
-      <form class="contact-form" action="mailto:lorisvignolles.pro@gmail.com" method="post" enctype="text/plain">
+      <form action="https://formspree.io/f/xeoekwlr" method="POST" class="contact-form">
         <input type="text" name="name" placeholder="Votre nom" required>
         <input type="email" name="email" placeholder="Votre email" required>
-        <textarea name="message" rows="4" placeholder="Votre message" required></textarea>
+        <textarea name="message" placeholder="Votre message" required></textarea>
         <button type="submit">Envoyer</button>
       </form>
+      
 
       <!-- Liens vers GitHub et CV -->
       <div class="contact-links">
