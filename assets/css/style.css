@@ -8,6 +8,11 @@ body {
     padding: 0;
   }
 
+  a, a:visited {
+    color: rgb(0, 0, 0); /* Ou toute autre couleur souhaitée */
+    text-decoration: none;
+}
+
   textarea {
     resize: none;
   }
