@@ -42,6 +42,9 @@ document.addEventListener('scroll', function() {
         const navbarHeight = document.querySelector('.navbar').offsetHeight;
         const offset = 20; 
 
+        // Désactiver les interactions pendant le scroll
+        document.body.style.pointerEvents = "none";
+
         // Défilement fluide
         window.scrollTo({
             top: element.offsetTop - navbarHeight - offset,
@@ -61,7 +64,7 @@ document.addEventListener('scroll', function() {
             }
         });
 
-        // Supprime l'effet après 0.5s
+        // Supprime l'effet après 1 seconde
         setTimeout(() => {
             highlightIds.forEach(id => {
                 const highlightElement = document.getElementById(id);
@@ -69,9 +72,14 @@ document.addEventListener('scroll', function() {
                     highlightElement.classList.remove("highlight");
                 }
             });
+
+            // Réactiver les interactions après le scroll
+            document.body.style.pointerEvents = "auto";
         }, 1000);
     }
 }
+
+
 
 
   
