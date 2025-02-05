@@ -337,7 +337,7 @@ body {
 }
 
 .skill-card:hover, .project-card:hover {
-  background-color: #333;
+  background-color: rgba(255, 215, 0, 0.3);
 }
 
 /* Mise en surbrillance temporaire après le scroll */
