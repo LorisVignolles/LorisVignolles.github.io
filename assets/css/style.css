@@ -98,6 +98,31 @@ body {
     }
 }
 
+.interests-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px; /* Assure un bon espacement sous le texte */
+  width: 100%;
+}
+
+.interest-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.interest-item i {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+
+
+
 
   .experience-container {
     display: flex;
@@ -195,9 +220,10 @@ body {
   /* Section Compétences */
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px; /* Augmenté pour plus d'espacement */
   margin-top: 20px;
+  justify-content: center;
 }
 
 .skill-card {
@@ -207,6 +233,7 @@ body {
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px; /* Ajouté pour espacer verticalement */
 }
 
 .skill-card:hover {
@@ -230,6 +257,29 @@ body {
   font-size: 0.9rem;
   color: #bbb;
 }
+
+.soft-skills {
+  margin-top: 30px; /* Plus d’espace au-dessus des soft skills */
+}
+
+/* Ajustement pour les écrans plus petits */
+@media (max-width: 900px) {
+  .skills-container {
+    gap: 25px; /* Légèrement réduit sur les petits écrans */
+  }
+
+  .skill-card {
+    width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 600px) {
+  .skill-card {
+    width: 100%;
+  }
+}
+
+
 
   
   /* Suppression de l'animation fadeIn */

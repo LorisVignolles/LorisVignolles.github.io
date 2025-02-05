@@ -34,12 +34,12 @@
   <div class="container text-center d-flex flex-column align-items-center">
     <h2 class="mb-4">À propos de moi</h2>
     
-    <div class="about-content d-flex align-items-center">
+    <div class="about-content d-flex flex-column align-items-center">
       <!-- Photo et Nom -->
       <div class="photo-container">
         <a href="https://www.linkedin.com/in/lorisvignolles/" target="_blank">
           <img src="images/photo_loris.jpg" alt="Loris Vignolles" class="profile-pic">
-      </a>
+        </a>
         <div>
           <p class="name">Loris Vignolles</p>
         </div>
@@ -52,9 +52,28 @@
         approfondir mon apprentissage. De nature rigoureuse, pragmatique et bienveillante, 
         j’aime particulièrement le contact humain et le travail d’équipe.
       </p>
+
+      <!-- Centres d'intérêts sous le texte -->
+      <div class="interests d-flex justify-content-center mt-3">
+        <div class="interest-item">
+          <i class="fas fa-futbol"></i>
+          <p>Football</p>
+        </div>
+        <div class="interest-item">
+          <i class="fas fa-chess-knight"></i>
+          <p>Échecs</p>
+        </div>
+        <div class="interest-item">
+          <i class="fas fa-running"></i>
+          <p>Course à pied</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
+
+
 
 
 
@@ -105,6 +124,9 @@
 <section id="skills" class="section bg-dark text-light">
   <div class="container">
     <h2 class="text-center">Compétences</h2>
+    
+    <!-- Compétences techniques -->
+    <h3 class="text-center mt-4">Hard Skills</h3>
     <div class="skills-container">
       
       <div class="skill-card" id="skill-web" onclick="scrollToElement('projects', ['project-chiffrage', 'project-supervision', 'project-colis', 'project-emploi', 'project-ecommerce'])">
@@ -139,13 +161,45 @@
 
       <div class="skill-card" id="skill-gestion" onclick="scrollToElement('projects', ['project-chiffrage', 'project-colis', 'project-supervision', 'project-ecommerce', 'project-emploi' ])">
         <i class="fas fa-project-diagram"></i>
-        <h5>Gestion de Projet & Travail d'équipe </h5>
+        <h5>Gestion de Projet & Travail d'équipe</h5>
         <p>Méthodes UML, Agile, gestion de projet et anglais.</p>
       </div>
 
     </div>
+
+    <!-- Soft Skills -->
+    <h3 class="text-center mt-4">Soft Skills</h3>
+    <div class="skills-container soft-skills">
+      
+      <div class="skill-card">
+        <i class="fas fa-tasks"></i>
+        <h5>Gestion et Conduite de Projet</h5>
+        <p>Planification, suivi et gestion des ressources.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-users"></i>
+        <h5>Travail en Collaboration</h5>
+        <p>Coordination et communication efficace en équipe.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-comments"></i>
+        <h5>Communication Professionnelle</h5>
+        <p>Échanges formels et présentations techniques.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-language"></i>
+        <h5>Langues Vivantes</h5>
+        <p>Anglais (B2), Espagnol (A1).</p>
+      </div>
+
+    </div>
+
   </div>
 </section>
+
 
 
 
