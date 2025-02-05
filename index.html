@@ -164,25 +164,25 @@
     <h3 class="text-center mt-4">Soft Skills</h3>
     <div class="skills-container soft-skills">
       
-      <div class="skill-card">
+      <div class="skill-card" id="skill-projet" onclick="scrollToElement('projects', ['project-emploi', 'project-ecommerce', 'project-chiffrage', 'project-colis'])">
         <i class="fas fa-tasks"></i>
         <h5>Gestion et Conduite de Projet</h5>
         <p>Planification, suivi et gestion des ressources.</p>
       </div>
 
-      <div class="skill-card">
+      <div class="skill-card" id="skill-workteam" onclick="scrollToElement('projects', ['project-ecommerce', 'project-colis'])">
         <i class="fas fa-users"></i>
         <h5>Travail en Collaboration</h5>
         <p>Coordination et communication efficace en équipe.</p>
       </div>
 
-      <div class="skill-card">
+      <div class="skill-card" id="skill-com" onclick="scrollToElement('projects', ['project-chiffrage', 'project-colis'])">
         <i class="fas fa-comments"></i>
         <h5>Communication Professionnelle</h5>
         <p>Échanges formels et présentations techniques.</p>
       </div>
 
-      <div class="skill-card">
+      <div class="skill-card" id="skill-lang" onclick="scrollToElement('projects', ['project-chiffrage'])">
         <i class="fas fa-language"></i>
         <h5>Langues Vivantes</h5>
         <p>Anglais (B2), Espagnol (A1).</p>
@@ -202,7 +202,7 @@
     <h2 class="text-center">Projets</h2>
     <div class="projects-container">
       
-      <div class="project-card" id="project-chiffrage" onclick="scrollToElement('skills', ['skill-web', 'skill-gestion'])">
+      <div class="project-card" id="project-chiffrage" onclick="scrollToElement('skills', ['skill-web', 'skill-gestion', 'skill-lang', 'skill-com', 'skill-projet'])">
         <i class="fas fa-code"></i>
         <h5>Outil de Chiffrage</h5>
         <p>Développement web avec JS, PHP, HTML & CSS, intégration API.</p>
@@ -220,19 +220,19 @@
         <p>Programmation d’un automate industriel avec ESP-IDF et C++.</p>
       </div>
 
-      <div class="project-card" id="project-colis" onclick="scrollToElement('skills', ['skill-web', 'skill-db', 'skill-gestion'])">
+      <div class="project-card" id="project-colis" onclick="scrollToElement('skills', ['skill-web', 'skill-db', 'skill-gestion', 'skill-com', 'skill-workteam', 'skill-projet'])">
         <i class="fas fa-box"></i>
         <h5>Application de Livraison de Colis</h5>
         <p>Backend en PHP Laravel, Frontend en Angular.</p>
       </div>
 
-      <div class="project-card" id="project-emploi" onclick="scrollToElement('skills', ['skill-web', 'skill-devops','skill-gestion'])">
+      <div class="project-card" id="project-emploi" onclick="scrollToElement('skills', ['skill-web', 'skill-devops','skill-gestion', 'skill-projet'])">
         <i class="fas fa-calendar-alt"></i>
         <h5>Gestion des Emplois du Temps</h5>
         <p>Développement Vue.js/Django, déployé avec Docker.</p>
       </div>
 
-      <div class="project-card" id="project-ecommerce" onclick="scrollToElement('skills', ['skill-web', 'skill-db', 'skill-gestion'])">
+      <div class="project-card" id="project-ecommerce" onclick="scrollToElement('skills', ['skill-web', 'skill-db', 'skill-gestion', 'skill-workteam', 'skill-projet'])">
         <i class="fas fa-shopping-cart"></i>
         <h5>Développement d'un Site E-commerce</h5>
         <p>PHP, JavaScript, HTML/CSS, MySQL.</p>
